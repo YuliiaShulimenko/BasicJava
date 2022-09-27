@@ -1,0 +1,43 @@
+public class Main {
+    public static void main(String[] args) {
+        /*Сделать класс с двумя переменными разного типа ( но числовые )*/
+        int first = 10;
+        double second = 20;
+
+
+        System.out.println("int first " + first);
+        System.out.println( "double second " + second);
+
+
+        getCat("myo","gav");
+
+        getString("I am ", 32);
+
+        System.out.println(getSum(38 ,8));
+        System.out.println(getSum2(12.2, 15.6));
+
+    }
+//2.прописать 4 метода 2 из которых возвращают значение 2 нет //
+    public static void getCat(String myo, String gav) {
+        System.out.println(myo + gav);
+
+    }
+    public static void getString(String age, int year) {
+        System.out.println(age + year);
+
+    }
+
+    public static int getSum (int num1, int num2){
+        int num3 = num1 * num2;
+        return num3;
+    }
+
+    public static double getSum2 (double sum3, double sum4){
+        return sum3/sum4;
+    }
+}
+
+
+/*3.В методе main вывести на экран результат работы методов
+* Если правильно поняла, то нужно было через команду soul сделать так, чтобы результаты команд отобразился в нижней консоле*/
+//4.все 4 метода должны использовать все математические операторы которые мы прошли//использовала умножение,деление,сложение//
