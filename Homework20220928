@@ -1,0 +1,81 @@
+
+    package _28092022;
+
+import java.util.Scanner;
+
+public class Test1{
+
+    public static void getClass (double a, double b){
+        System.out.println(a/b);
+    }
+
+    public static void getAmount(int a1, int a2) {
+       System.out.println(a1 + a2);
+    }
+
+    public static void getS(int b1, int b2, int b3, int b4) {
+        System.out.println(b1 / b2 * b3 + b4);
+    }
+
+    public static int getSum(int f1, int f2, int f3) {
+            int getSum = f1 * f2* f3;
+            return f1 * f2* f3;
+    }
+
+    public static double getNum(double d1, double d2, double d3) {
+            double getNum = d1 / d2 + d3;
+            return d1 / d2 + d3;
+    }
+
+    public static int getPush(int p1, int p2, int p3) {
+        System.out.println(p1 + p2 * p3);
+            return p1 + p2 * p3;
+    }
+
+    public static double getPush1(double ph1, double ph2, double ph3) {
+        System.out.println(ph1 / ph2 / ph3);
+            return ph1 / ph2 /ph3;
+    }
+    public static double getNum2(double n1, int n2, int n3) {
+            double resolt = n1 / n2 + n3;
+            return resolt;
+    }
+    public static void getHome(int h1, int h2, int h3, int h4) {
+        System.out.println(h1 * h2 + h3 - h4);
+        }
+
+    public static void getSum(int s1, int s2) {
+        System.out.println(s1 * s2);
+    }
+    public static float getFly(float f1, float f2) {
+        float resolt1 = f1 * f2;
+        return resolt1;
+    }
+    public static int getGlow(int g1, int g2, int g3) {
+        double getNum = g1 / g2 + g3;
+        System.out.println(g1 / g2 + g3);
+        return g1 / g2 + g3;
+    }
+
+    public static void main (String[]arge){
+        getClass(100, 50);
+        getAmount(25, 25 );
+        getS(11,12,15,8);
+        System.out.println(getNum(10,10,33));
+        System.out.println(getSum(11,15,17));
+        Scanner scanner = new Scanner(System.in);
+        getPush(scanner.nextInt(), scanner.nextInt(), scanner.nextInt());
+        getPush1(scanner.nextDouble(), scanner.nextDouble(), scanner.nextDouble());
+        double n1 = scanner.nextDouble();
+        int n2 = scanner.nextInt();
+        int n3 = scanner.nextInt();
+        System.out.println(getNum2(n1,n2,n3));
+        getHome(11,12,15,8);
+        getSum(500, 800);
+        float f1 = scanner.nextInt();
+        float f2 = scanner.nextInt();
+        System.out.println(getFly(f1,f2));
+        getGlow(4,1,5);
+    }
+    }
+    //на больше фантазии не хватило//
