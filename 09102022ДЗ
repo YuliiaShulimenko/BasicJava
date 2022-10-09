@@ -1,0 +1,97 @@
+КАЛЬКУЛЯТОР
+
+import java.util.Scanner;
+
+public class Calcul {
+        public static int getSum(int a1, int a2) {
+            int resolt = a1 + a2;
+            System.out.println(a1 + a2);
+            return resolt;
+        }
+
+        public static int getSub(int s1, int s2) {
+            int resolt1 = s1 - s2;
+            System.out.println(s1 - s2);
+            return resolt1;
+        }
+
+        public static double getM(double m1, double m2, double m3) {
+            double resolt = m1 * m2 * m3;
+            System.out.println(getM(m1,m2,m3));
+            return resolt;
+        }
+
+        public static int getDel(int d1, int d2) {
+            int resolt3 = d1 / d2;
+            System.out.println(d1 / d2);
+            return resolt3;
+            }
+
+
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            int getResolt = getSum(scanner.nextInt(), scanner.nextInt());
+         //   getSum(scanner.nextInt(), scanner.nextInt());
+            System.out.println(getResolt);
+           // getSub(scanner.nextInt(), scanner.nextInt());
+
+        }
+}
+
+
+
+ Сделать кастинг переменных: byte->int, int-byte, long->short итд 8 вариантов
+  package Dr09102022;
+    public class DZ09102022 {
+
+//    long -> short;
+    static long l = 158;
+    static short sh = (short) l;
+
+
+//        long -> byte;
+    static long l1 = 111;
+    static byte b = (byte) l1;
+
+
+//    double -> float
+    static double d = 20.5;
+    static float f = (float) d;
+
+
+//        int -> double
+    static int i = 25478;
+    static double d2 = (double) i;
+
+
+//        int -> byte
+    static int i3 = 256;
+    static byte b3 = (byte) i;
+
+
+//byte -> int
+    static byte b2 = 78;
+    static int i2 = (int) b2;
+
+//        long -> double
+    static long l2 = 125;
+    static double d4 = l2;
+
+
+//        char -> int
+    static  char ch = 'K';
+    static   int i4 = ch;
+
+
+    public static void main(String[] args) {
+    System.out.println(sh);
+    System.out.println(b);
+    System.out.println(f);
+    System.out.println(d2);
+    System.out.println(b3);
+    System.out.println(i2);
+    System.out.println(d4);
+    System.out.println(i4);
+    }
+        }
