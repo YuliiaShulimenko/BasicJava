@@ -1,0 +1,50 @@
+//Простой класс с полями, и связать его с другим классом через конструктор
+
+package _12102022;
+
+public class Jewerly {
+    
+    public static class RingJewerly {
+       
+        private String color;
+        private int size ;
+        private boolean jewel; // true -diamond ; false - sapphire
+        private boolean metal; // true - золото, false - серебро
+
+        private final int sample = 585;
+        
+
+        public RingJewerly(String color, int size, boolean jewel, boolean metal) {
+            this.color = color;
+            this.size = size;
+            this.jewel = jewel;
+            this.metal = metal;
+
+        }
+
+
+        public RingJewerly(String color, int size) {
+            this.color = color;
+            this.size = size;
+           
+        }
+
+        public RingJewerly() {
+        }
+
+        public String getColor() {
+            return color;
+        }
+
+        public void getColor(String color) {
+            this.color = color;
+        }
+
+      
+        }
+        public static void main(String[] args) {
+        RingJewerly merrydRing = new RingJewerly("pink", 17, true, false);
+        System.out.println(merrydRing.);<------не соображаю,что за точкой написать
+     
+    }
+}
