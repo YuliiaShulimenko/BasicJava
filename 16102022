@@ -1,0 +1,42 @@
+Михаил,прошу обратить внимания,вроде нигде ничего не подчеркивает,но при запуске выдает ошибку variable i is already defined in method main(java.lang.String[]) подчеркивает и на 10 строке,не понимаю в чем проблема,Спасибо
+
+
+
+public static void main(String[] args) {
+        Random random = new Random();
+        int [] arr1 = new int[22];
+
+    System.out.println(Arrays.toString(arr1));
+        int i = 0;
+
+
+// ЦИКЛ WHILE
+        while (i < arr1.length - 5) {
+        arr1[i] = random.nextInt(25, 50);
+        i++;
+    System.out.println(Arrays.toString(arr1));
+ }
+
+
+//ЦИКЛ FOREACH
+        for (int a: arr1) {
+        a = random.nextInt(15, 30);
+    System.out.println(a);
+ }
+
+//ЦИКЛ FORI IF
+       for (int i = 0; i <arr1.length ; i++) {
+       arr1[i] =random.nextInt(10, 40);
+    System.out.println((arr1[i]));
+
+       if (arr1[i]== 25){
+    System.out.println("YOU ARE WINNER");
+       }
+       else if (arr1[i]== 55){
+    System.out.println("YOU ARE WINNER");
+       }
+       else System.out.println("LOOSER");
+       }
+    }
+}
+
